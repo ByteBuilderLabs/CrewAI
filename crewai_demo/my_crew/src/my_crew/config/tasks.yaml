@@ -1,0 +1,14 @@
+research_task:
+  description: >
+    Research {topic} online and identify the five most relevant facts developers should know.
+  expected_output: >
+    A list of 5-10 bullet points summarizing key facts about {topic}.
+  agent: researcher
+
+report_task:
+  description: >
+    Take the research output and create a structured markdown summary of {topic}.
+  expected_output: >
+    A markdown file titled "{topic} Summary" with headings and bullet points.
+  agent: reporter
+  output_file: summary.md
